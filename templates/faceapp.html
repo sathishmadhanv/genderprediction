@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %} 
+    <div class="container">
+      <h1>Face Dection</h1>
+      <br>
+      <br>
+      <div >
+        <form action="" method="POST" enctype="multipart/form-data">
+          <label for="upload">Upload</label>
+          <input type="file" id="filename" name="image" required="true">
+          <br>
+          <br>
+          <input type="submit" value="Find Faces">
+          <br>
+          <br>
+          <br>
+      {% if Upload %}
+        <div class="row">
+          <div class="col-md-6">
+              <img src="{{ url_for('static',filename='uploads/') }}{{ fname }}" alt="sam" width="{{w}}" height="300">
+              <br>
+          </div>
+          <div class="col-md-6">   
+              <img src="{{ url_for('static',filename='faces/') }}{{ fname }}" alt="sam" width="{{w}}" height="300">
+          </div>
+        </div>
+      {% endif %}
+      </div>
+    </div>
+        
+{%endblock bodyblock %} 

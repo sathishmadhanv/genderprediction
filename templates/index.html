@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block bodyblock %} 
+    <div class="container">
+      <h1>Face Recognition Application</h1>
+      <br>
+      <br>
+      <p>This app is driven by data and machine learning model. As soon as user upload the image, in background it convert into grayscale, crop face, convert into eigen image and finally it model to predict. All this functionality dumped in the flask app.</p>
+      <br>
+      <img src="{{url_for('static',filename='images/002.png')}}" alt="" width="600" height="250" >
+      <br>
+    </div>
+        
+{%endblock bodyblock %} 

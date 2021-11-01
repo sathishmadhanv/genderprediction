@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    <link rel="stylesheet" href={{url_for('static',filename="css/main.css")}}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Gender Prediction</title>
+</head>
+<body>
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{url_for('index')}}">
+            <img src="{{url_for('static',filename='images/applilogo.png')}}" alt="" width="150" height="75" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{url_for('index')}}" style="color: aliceblue;">Home</a>
+              </li>
+              
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('gender')}}" style="color: aliceblue;">Gender prediction</a>
+            </li>
+            </ul>
+          </div>
+          <div>
+            <a  class="navbar-brand" >
+              <img src="{{url_for('static',filename='images/s3.jpg')}}" class="rounded-3"  alt="..." width="70" height="70" ></a>
+          </div >
+          
+          <div class="d-flex" style="padding-right: 20px;">
+            <p><span   style="color: aliceblue;"><b>Sathish Madhan</b>
+              <br>Python Developer</span></p>
+            </div>
+        </div>
+        </div>
+        
+      </nav>
+      <br>
+    <br>
+    <br>
+
+   
+    {%block bodyblock%}
+
+
+    {% endblock %}
+<footer>
+ <div class="container">
+   <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <p><span   style="color: aliceblue;"><b>Sathish Madhan</b>
+                <br>Python Developer</span></p>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="address" style="list-style: none;">
+                <span style="color: aliceblue;">Contact</span>       
+                <li>
+                   <i class="fa fa-phone" aria-hidden="true" style="color: aliceblue;"></i> 
+                   <a style="color: aliceblue;"> : +91 8610157443</a>
+                </li>
+                <li>
+                   <i class="fa fa-map-marker" aria-hidden="true" style="color: aliceblue;"></i> 
+                   <a style="color: aliceblue;"> : Chennai,India</a>
+                </li> 
+                <li>
+                   <i class="fa fa-envelope" aria-hidden="true" style="color: aliceblue;"></i> 
+                   <a style="color: aliceblue;"> : sathishmadhanv@gmail.com</a>
+                </li> 
+               </ul>
+            </div>
+       
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="address" style="list-style: none;">
+                <span style="color: aliceblue;">Social Media</span>       
+                <li>
+                  <span class="iconify" data-icon="fa-brands:hackerrank" style="color: aliceblue;"></span>
+                  <a style="color: aliceblue;"> : </a><a href="https://www.hackerrank.com/sathishmadhanv" style="color: aliceblue;">Sathish Madhan</a>
+               </li> 
+                <li>
+                   <i class="fa fa-linkedin" aria-hidden="true" style="color: aliceblue;"> : </i> 
+                   <a href="https://www.linkedin.com/in/sathish-madhan-531141111/" style="color: aliceblue;">Sathish Madhan</a>
+                </li> 
+                <li>
+                   <i class="fa fa-github" aria-hidden="true" style="color: aliceblue;"> : </i> 
+                   <a href="https://github.com/sathishmadhanv" style="color: aliceblue;">Sathish Madhan</a>
+                </li> 
+                
+                
+               </ul>
+            </div>
+        </div> 
+    </div>
+</footer>
+      <style>
+        footer
+        {
+          position:fixed;
+          left:0;
+          bottom:0;
+          width:100%;
+          background-color:black;
+        }
+        
+        
+      </style>
+</body>
+</html>
